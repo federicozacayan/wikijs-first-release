@@ -32,7 +32,7 @@ padding: 1rem;
 border-radius: .5rem;
 border: .5rem solid olive;
 color: rgb(17, 53, 17);
-overflow: ;
+overflow: auto;
 }
 pre {
 -ms-word-break: break-all!important;
