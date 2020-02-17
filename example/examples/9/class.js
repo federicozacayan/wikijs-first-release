@@ -32,7 +32,7 @@ class SomeClass extends Component {
 export default SomeClass;
 /*[
     ["h1","After Render"],
-    ["lines","1-34"],
+    ["lines","1-32"],
     ["h2","Explanation"],
     ["p","After update the state of the component instance you have a life cycle hook to trigger vanilla Javascript."],
     ["p","You can access to the global scope."],
