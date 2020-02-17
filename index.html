@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Kiwi JS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="app"></div>
+    <div class="kiwi">
+        <div class="seed"></div>
+    </div>
+    <h1>Kiwi JS</h1>
+    <a href="wikijs-first-release/example/index.html">Documentation</a>
 </body>
-<script type="module">
-import Componet from 'https://federicozacayan.github.io/wikijs-first-release/kiwi/Component.js'
-class App extends Componet{
-    template(){
-        return `<h1>Hello World</h1>`
-    }
-}
-let content = new App();
-content.querySelector('.app')
-</script>
+
 </html>

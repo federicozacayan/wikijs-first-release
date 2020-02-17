@@ -84,11 +84,15 @@ export default class App extends Component {
 
     template() {
         return `<div>
+        <a  href="/wikijs-first-release/index.html">Home</a>
         <input type="button" value="Prev" click="prev"></input>
         <input type="button" value="Next" click="next"></input>
         <Link id="${this.state.example}" text="Demo"></Link>
         <div class="explanation">Explanation</div>
         <pre class="pre">Loading... or an error happend!</pre>
+        <input type="button" value="Prev" click="prev"></input>
+        <input type="button" value="Next" click="next"></input>
+        <Link id="${this.state.example}" text="Demo"></Link>
     </div>`
     }
 }
