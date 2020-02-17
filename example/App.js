@@ -81,13 +81,16 @@ export default class App extends Component {
     addEventListener() {
         return ['click']
     }
-
+    
+    
     template() {
         return `<div>
         <a  href="/wikijs-first-release/index.html">Home</a>
         <input type="button" value="Prev" click="prev"></input>
         <input type="button" value="Next" click="next"></input>
         <Link id="${this.state.example}" text="Demo"></Link>
+        <a target="_blank" href="https://federicozacayan.github.io/wikijs-first-release/kiwi/Component.js" download>Download</a>
+        
         <div class="explanation">Explanation</div>
         <pre class="pre">Loading... or an error happend!</pre>
         <input type="button" value="Prev" click="prev"></input>

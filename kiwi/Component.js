@@ -15,11 +15,13 @@ const on = (n, event, func) => {
 class SmartRefresh {
     static update(that) {
         let old = that.freshNode;
-        let replace = true
-        let node = that.exec(true);
-        old.parentNode.replaceChild(node, old)
+        let newNode = that.exec(true);
+        let parentNode = document.createElement('div')
+        parentNode.appendChild(newNode)
+        that.beforeRender(parentNode)
+        old.parentNode.replaceChild(newNode, old)
         old.remove();
-        that.afterRender(node.parentNode)
+        that.afterRender(newNode.parentNode)
     }
 }
 
@@ -107,6 +109,9 @@ class Component {
         SmartRefresh.update(this)
     }
     afterRender(parentNode) {
+        //to be overwriten
+    }
+    beforeRender(parentNode) {
         //to be overwriten
     }
 
