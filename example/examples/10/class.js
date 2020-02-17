@@ -40,7 +40,7 @@ export default SomeClass;
     ["p","Also, you can access directly to the component's node using its parentNode"],
     ["lines","20-21"],
     ["p","This life cycle hook method is used mainly to retrieve the first data from a rest API."],
-    ["next","1"]
+    ["next","0"]
 ]*//*
 
 

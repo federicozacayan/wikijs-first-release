@@ -8,18 +8,15 @@
 </head>
 <body>
     <div class="app"></div>
-    
 </body>
-<script type="module" src="bundle.js"></script>
 <script type="module">
-import Componet from './kiwi/Component.js'
+import Componet from 'https://federicozacayan.github.io/wikijs-first-release/kiwi/Component.js'
 class App extends Componet{
     template(){
         return `<h1>Hello World</h1>`
     }
 }
 let content = new App();
-
 content.querySelector('.app')
 </script>
 </html>
