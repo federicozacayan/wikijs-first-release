@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Examples</title>
+</head>
+
+<body>
+    <div class="app"></div>
+</body>
+<script type="module">
+    function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+            vars[key] = value;
+        });
+        return vars;
+    }
+
+    let module = './examples/' + getUrlVars()['example'] + '/class.js'
+    let scriptCode = `import App from './examples/${getUrlVars()['example']}/class.js';
+    let content = new App();
+    content.querySelector('.app')`
+    var script = document.createElement('script');
+    script.type = 'module'
+    script.innerHTML = scriptCode
+    document.head.appendChild(script);
+</script>
+
+</html>
