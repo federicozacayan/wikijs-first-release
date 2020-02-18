@@ -21,7 +21,7 @@ export default class App extends Component {
     links() {
         return this.state.list;
     }
-    
+
     justOnce(parentNode) {
         this.parentNode = parentNode
         fetch(`examples/${this.state.example}/class.js`)
@@ -30,23 +30,38 @@ export default class App extends Component {
                 let dataReduced = Render.process(this.parentNode, data, this)
                 this.state = { ...this.state, text: dataReduced };
                 parentNode.querySelector('.pre').innerText = this.state.text
+                this.tts()
             })
     }
-
+    tts() {
+        let nodeList = document.querySelectorAll('p, i');
+        [].forEach.call(nodeList, a => {
+            let tts = ()=>{
+                speak(a.innerText)
+                a.style.color = 'red'
+            }
+            a.removeEventListener('click',tts)
+            a.addEventListener('click',tts)
+            
+        });
+    }
     ajax() {
         fetch(`examples/${this.state.example}/class.js`)
             .then(res => res.text())
             .then((data) => {
                 this.tmp = data
                 this.newState = this.state
+                this.tts()
+                window.scrollTo(0,0)
             })
     }
-    
-    beforeRender(parentNode){
+
+    beforeRender(parentNode) {
         let dataReduced = Render.process(parentNode, this.tmp, this)
         this.state = { ...this.state, text: dataReduced };
         parentNode.querySelector('.pre').innerText = this.state.text
     }
+
 
     next() {
         if (typeof this.state.next === 'number') {
@@ -84,8 +99,8 @@ export default class App extends Component {
     addEventListener() {
         return ['click']
     }
-    
-    
+
+
     template() {
         return `<div>
         <a  href="/wikijs-first-release/index.html">Home</a>

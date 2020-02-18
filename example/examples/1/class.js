@@ -14,7 +14,7 @@ export default App;
     ["p","The Component Class is the parent class of any component of this library."],
     ["p","This Class has a querySelector method to insert the node component in a specific node of the document.body"],
     ["lines","35-35"],
-    ["p","In this way, the following component will render 'Hello World' into the '.app' element."],
+    ["p","In this way and with the following component will render 'Hello World' into the '.app' element."],
     ["lines","1-9"],
    
 

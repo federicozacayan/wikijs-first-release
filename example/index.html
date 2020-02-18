@@ -16,4 +16,11 @@
 </body>
 <script type="module" src="App.js"></script>
 
+<script>
+    function speak(message) {
+        var msg = new SpeechSynthesisUtterance(message)
+        window.speechSynthesis.speak(msg)
+    }
+</script>
+
 </html>

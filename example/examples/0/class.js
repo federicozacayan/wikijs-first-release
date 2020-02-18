@@ -11,8 +11,8 @@ export default App;
     ["h1","Instalation"],
     ["lines","36-53"],
     ["h2","Explanation"],
-    ["p","into your HTML file you have to have an elemenent where you will insert the components."],
-    ["p","In this case is a 'div' with an '.app' class."],
+    ["p","Into your HTML file you have to have an element where you will insert the components."],
+    ["p","In this case is a div with an '.app' class."],
     ["lines","41-41"],
     ["h2","Import the library."],
     ["p","You can use the library located in github."],
@@ -24,7 +24,7 @@ export default App;
     ["lines","56-56"],
     ["p","Asuming you have the library in '../../../kiwi/Component.js'"],
     ["lines","1-1"],
-    ["p","The code of your module  could be:"],
+    ["p","The code of your module  could be like this."],
     
     ["prev","10"],
     ["next","1"]

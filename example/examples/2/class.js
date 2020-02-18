@@ -9,7 +9,7 @@ class SomeClass extends Component {
 export default SomeClass;
 /*[
     ["h1","Component"],
-    ["p","This is a simple component. It just has to extend class component."],
+    ["p","This is a simple component. It just has to extend th component class."],
     ["lines","3-3"],
     ["p","The template is a string. It is high recommended use wrap your string in back-ticks, like this `string`."],
     ["p","Using `back-ticks` you can interpolate variables or function that return strings"],
