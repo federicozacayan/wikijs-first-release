@@ -26,7 +26,7 @@ class SomeClass extends Component {
 export default SomeClass;
 /*[
     ["h1","Local Storage"],
-    ["lines","1-23"],
+    ["lines","1-26"],
     ["h2","Explanation"],
     ["p","To persist data into the browser you can use setState method and assign a value by default."],
     ["lines","4-8"],

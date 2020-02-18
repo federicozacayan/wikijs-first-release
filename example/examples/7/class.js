@@ -25,7 +25,7 @@ class SomeClass extends Component {
 export default SomeClass;
 /*[
     ["h1","State"],
-    ["lines","1-23"],
+    ["lines","1-25"],
     ["h2","Explanation"],
     ["p","The state is a special attribute that allows refresh the component visualisation when the this.newState is updated."],
     ["p","The component constructor calls the setState method in order to set the attribute this.state."],

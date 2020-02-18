@@ -11,10 +11,11 @@ class SomeClass extends Component {
         return `<div click="doSomething">Click me</div>`
     }
 }
+
 export default SomeClass;
 /*[
     ["h1","AddEventListener"],
-    ["lines","1-14"],
+    ["lines","1-15"],
     ["h2","Explanation"],
     ["p","To enable an event just register the event you want to use."],
     ["lines","4-6"],

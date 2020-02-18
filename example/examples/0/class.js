@@ -35,14 +35,14 @@ export default App;
 ]*//*
 <!DOCTYPE html>
 <head>
-    <title>Document</title>
+    <title>Kiwi JS</title>
 </head>
 <body>
     <div class="app"></div>
 </body>
 <script type="module">
-import Componet from 'https://federicozacayan.github.io/wikijs-first-release/kiwi/Component.js'
-class App extends Componet{
+import Component from 'https://federicozacayan.github.io/wikijs-first-release/kiwi/Component.js'
+class App extends Component{
     template(){
         return `<h1>Hello World</h1>`
     }
