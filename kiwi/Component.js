@@ -262,7 +262,7 @@ class Component {
     }
 
     map(name, callback){
-        return this.prop[name].map(callback).toString().replace(",", "")
+        return this.prop[name].map(callback).toString().replace(/\,/g, "")
     }
 }
 
