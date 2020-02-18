@@ -32,7 +32,7 @@ export default SomeClass;
     ["lines","43-45"],
     ["p","The correct way to set up a Subcomponent is with two tags."],
     ["lines","17-19"],
-    ["p","Full Code"],
+    ["p","Full Code:"],
     ["next","5"]
 ]*//*
     setChildComponent() {

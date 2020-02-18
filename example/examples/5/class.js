@@ -36,7 +36,7 @@ export default SomeClass;
     ["lines","16-21"],
     ["p","The properties are automatically detected and availables to use into the subcomponent."],
     ["lines","3-10"],
-    ["p","Full Code"],
+    ["p","Full Code:"],
     ["next","6"]
 ]*//*
 

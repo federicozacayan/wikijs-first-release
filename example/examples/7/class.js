@@ -42,7 +42,7 @@ export default SomeClass;
     ["lines","13-13"],
     ["p","And then, set this.newState."],
     ["lines","14-14"],
-    ["p","Full Code"],
+    ["p","Full Code:"],
     ["next","8"]
 ]*//*
 

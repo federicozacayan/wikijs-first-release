@@ -32,7 +32,7 @@ export default SomeClass;
     ["lines","4-8"],
     ["p","Before refresh the component is a good place to update the local storage."],
     ["lines","12-16"],
-    ["p","In this way tha n state increment and never reset to the default value 0."],
+    ["p","In this way that n state increment and never reset to the default value 0."],
     ["next","9"]
 ]*//*
 
