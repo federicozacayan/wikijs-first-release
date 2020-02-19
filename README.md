@@ -1,16 +1,10 @@
-[![Build](https://travis-ci.org/eustatos/webpack-karma-starter.svg?branch=master)](https://travis-ci.org/eustatos/webpack-karma-starter)
-[![codecov](https://codecov.io/gh/eustatos/webpack-karma-starter/branch/master/graph/badge.svg)](https://codecov.io/gh/eustatos/webpack-karma-starter)
+# Kiwi JS
 
-# Karma Jasmine Coverage TDD ES6 Webpack
-
-This is a basic Hello-Wolrd application.
+This is a basic Javascript Library.
 
 ## Requirements
 
-- A browser.
-- Internet access.
-- Node installed.
-- Git installed.
+- ES6 sintax.
 
 
 ### Prepare
@@ -18,7 +12,7 @@ This is a basic Hello-Wolrd application.
 Clone this repository.
 
 ```bash
-git clone https://github.com/federicozacayan/webpack-karma-starter.git .
+@todo
 ```
 
 
@@ -26,11 +20,11 @@ git clone https://github.com/federicozacayan/webpack-karma-starter.git .
 
 Execute the following command in the root folder.
 ```bash
-npm update
+@todo
 ```
 
 ```bash
-npm coverage
+@todo
 ```
 
 ### Stop
@@ -42,16 +36,14 @@ To stop the server press `CTRL+C`.
 
 You can find a tutorial of this project in the following site.
 
-[https://federicozacayan.github.io/webpack-karma-starter/](https://federicozacayan.github.io/webpack-karma-starter/)
+[https://federicozacayan.github.io/wikijs-first-release/](https://federicozacayan.github.io/wikijs-first-release/)
 
 ## Usage
 
-Any file ending `.spec.js` in the `src` folder will be consider a test. Check karma.conf.js in the root folder.
+@todo
 
 ```json
-files: [
-      'src/**/*.spec.js'
-],
+@todo
 ```
 
-After running, open [coverage/lcov-report/index.html](coverage/lcov-report/index.html) to view the coverage in the browser.
+@todo
