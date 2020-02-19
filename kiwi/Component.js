@@ -110,9 +110,11 @@ class Component {
     }
     afterRender(parentNode) {
         //to be overwriten
+        return false
     }
     beforeRender(parentNode) {
         //to be overwriten
+        return false
     }
 
     addEventListener() {
@@ -198,14 +200,14 @@ class Component {
         } else {
             for (let index = 0; index < this.node_subComponentList.length; index++) {
                 const element = this.node_subComponentList[index];
-                if(
-                    element[0].parentNode == null
-                    ||
-                    typeof element[0].parentNode == 'undefined'
-                ){
-                    let tmp = document.createElement('div')
-                    tmp.appendChild(element[0])
-                }
+                // if(
+                //     element[0].parentNode == null
+                //     ||
+                //     typeof element[0].parentNode == 'undefined'
+                // ){
+                //     let tmp = document.createElement('div')
+                //     tmp.appendChild(element[0])
+                // }
                 element[0].parentNode.replaceChild(element[1], element[0]);
             }
         }
@@ -226,6 +228,7 @@ class Component {
     }
 
     exec(rerender) {
+        
         this.saveChildComponent()
         if (this.childComponent.length === 0) {
             this.firstRender(rerender);
@@ -257,8 +260,9 @@ class Component {
 
     
 
-    justOnce(){
+    justOnce(parentNode){
         //to overwrite
+        return false
     }
 
     map(name, callback){
@@ -266,4 +270,5 @@ class Component {
     }
 }
 
-export default Component 
+export default Component
+export {on, getMethods, SmartRefresh, Events, CoreProperties} 
