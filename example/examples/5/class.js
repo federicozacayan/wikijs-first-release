@@ -29,7 +29,7 @@ export default SomeClass;
     ["h1","Properties"],
     ["lines","1-27"],
     ["h2","Explanation"],
-    ["p","Las properties are method that return data to used into the subcomponent."],
+    ["p","the properties are method that return data to used into the subcomponent."],
     ["p","The names of the properties are any attribute name. In this example 'links1'."],
     ["lines","22-24"],
     ["p","The Values of the properties are the return of any method of the component instance. In this example 'links2'."],

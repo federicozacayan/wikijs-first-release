@@ -11,16 +11,32 @@ describe('Testing CoreProperties', () => {
     })
     
     it('Testing getMethods ', ()=>{
+        //todo rename getFromMethod instead of getMethods
         let props = {'m1':'m1'}
-        let out = 'fail'
         class Obj{
             m1(){
-                out = 'ok'
+                return 'ok'
             }
         }
         let obj = new Obj()
         let list = CoreProperties.getMethods(props, obj)
-        expect(out).toBe('ok');
+        expect(list.m1).toBe('ok');
+    })
+
+    it('Testing getMethods 2', ()=>{
+        let props = {'m1':'m1'}
+        window.out = 'fail'
+        class Obj2{
+            m1(){
+                return () =>{
+                    window.out = 'ok'
+                }
+            }
+        }
+        let obj = new Obj2()
+        let list = CoreProperties.getMethods(props, obj)
+        list.m1()
+        expect(window.out).toBe('ok');
     })
 
     

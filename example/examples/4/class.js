@@ -28,7 +28,7 @@ export default SomeClass;
     ["lines","14-16"],
     ["p","Alternatively, you can set an Array of Subcomponents if you have more than one."],
     ["lines","38-40"],
-    ["p","Self closed Tags are not availables for Components in the early version of this framework."],
+    ["p","Self closed Tags are not availables for Components in the early version of this library."],
     ["lines","43-45"],
     ["p","The correct way to set up a Subcomponent is with two tags."],
     ["lines","17-19"],

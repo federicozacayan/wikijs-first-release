@@ -40,7 +40,7 @@ content.querySelector('.app')
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kiwi JS Framework</title>
+    <title>Kiwi JS Library</title>
 </head>
 <body>
     <div class="app"></div>
