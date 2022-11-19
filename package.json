@@ -30,6 +30,6 @@
     "protractor": "^5.4.1",
     "source-map-loader": "^0.2.4",
     "webpack": "^4.21.0",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.3.12"
   }
 }
